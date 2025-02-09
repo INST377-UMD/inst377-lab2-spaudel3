@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Give Me Your Bank Info!!!</title>
+        <style>
+            body {
+                background-color: antiquewhite;
+                font-family:monospace
+            }
+
+            .intro {
+                text-align: center;
+            }
+
+            .userName {
+                margin-bottom: 25px;
+                font-size: 25px;
+            }
+
+            .cardInfo {
+                margin-bottom: 25px;
+                font-size: 25px
+            }
+
+            input[type=submit] {
+                margin-top: 10px;
+                margin-left: 25px;
+                color:white;
+                background-color:green;
+                font-size: 200px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+
+            input[type=submit]:hover {
+                background-color: green;
+                color:chartreuse;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="intro">
+            <h1><u>I Need Money!</u></h1>
+            <h2>Went into debt because of gambling and now I need a way out!</h2>
+            <h2>Guaranteed 2x back on your investment when I hit the jackpot!</h2>
+        </div>
+        <form name="bankInfo" method="get" action="lab2formsuccess.html">
+            <div class="userName">
+            <!-- User Name -->
+                <h3><u>Name Info</u></h3>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required>
+                <br>
+                <label for="middleName">Middle Name:</label>
+                <input type="text" id="middleName">
+                <br>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required>
+                <br>
+                <hr>
+            </div>
+            <!-- Card Info -->
+                <div class="cardInfo">
+                <h3><u>Card Info</u></h3>
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" maxlength="16" required>
+                <br>
+                <label for="expirationDate">Expiration Date:</label>
+                <input type="date" id="expirationDate" required>
+                <br>
+                <label for="securityCode">Security Code:</label>
+                <input type="text" id="securityCode" maxlength="3" required>
+                <br>
+            </div>
+            <!-- <div class="submit">     -->
+                <input type="submit" value="Invest!">
+            <!-- </div> -->
+        </form>
+        
+        <p>Don't actually put in your card info, your money will be spent on Steam games</p>
+    </body>
+</html>
